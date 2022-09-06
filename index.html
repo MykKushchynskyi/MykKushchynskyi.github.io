@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/CSS/reset.css" />
+    <link rel="stylesheet" href="./resources/CSS/style.css" />
+    <script src="./resources/JS/main.js" defer></script>
+    <title>Portfolio Mykola Kushchynskyi</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Main</a></li>
+          <li><a href="#">My projects</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <canvas id="canvas"></canvas>
+      <section class="banner">
+        <h1><span class="flicker">Hello</span>,</h1>
+        <h1>
+          <span>my n<span class="fast-flicker">a</span>me Mykola</span>
+        </h1>
+        <h1>
+          <span id="fast-flicker" class="fast-flicker"
+            >And I learn Frontend</span
+          >
+        </h1>
+      </section>
+      <section class="my-projects">
+        <h2>My projects</h2>
+        <div class="projects">
+          <div class="project gradien-border">
+            <p>Place for awesome project</p>
+          </div>
+          <div class="project gradien-border">
+            <p>Place for awesome project</p>
+          </div>
+          <div class="project gradien-border">
+            <p>Place for awesome project</p>
+          </div>
+        </div>
+      </section>
+      <section class="about-me">
+        <h2>About me</h2>
+        <p>
+          Bacon ipsum dolor amet buffalo cupim andouille tri-tip, sirloin tongue
+          jowl jerky shoulder pork loin venison pork belly prosciutto drumstick.
+          Cow prosciutto ground round doner. Leberkas filet mignon cupim
+          landjaeger ham hock turkey buffalo, brisket shoulder pancetta fatback
+          porchetta meatloaf capicola. Pork brisket t-bone, fatback hamburger
+          andouille prosciutto. Sausage pork belly tongue cupim beef ribs
+          prosciutto shoulder boudin corned beef flank, filet mignon pastrami.
+          Swine corned beef ham hock andouille flank.
+        </p>
+        <h3>My skills</h3>
+        <ul class="skills">
+          <li class="skill">
+            HTML<img
+              src="./resources/img/html-svgrepo-com.svg"
+              class="flip-vertical-right"
+            />
+          </li>
+          <li class="skill">
+            CSS
+            <img
+              src="./resources/img/css-svgrepo-com (2).svg"
+              class="flip-vertical-right"
+            />
+          </li>
+          <li class="skill">
+            Git
+            <img
+              src="./resources/img/git-icon-svgrepo-com.svg"
+              class="flip-vertical-right"
+            />
+          </li>
+          <li class="skill">
+            Java Script
+            <img
+              src="./resources/img/js-svgrepo-com (1).svg"
+              class="flip-vertical-right"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="contact-me">
+        <form>
+          <label for="email">Write Me</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            value="Write your email"
+            class="gradien-border"
+          />
+          <textarea
+            name="question"
+            id="question"
+            cols="40"
+            rows="10"
+            class="gradien-border"
+          >
+Input your text 
+          </textarea>
+          <button type="submit" form="form1" value="Submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
