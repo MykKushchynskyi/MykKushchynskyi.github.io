@@ -1,0 +1,469 @@
+@font-face {
+    font-family: "Oswald-bold";
+    src: url(/resources/fonts/Oswald-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Oswald-light";
+    src: url(/resources/fonts/Oswald-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Oswald-regular";
+    src: url(/resources/fonts/Oswald-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Quattrocento-bold";
+    src: url(/resources/fonts/Quattrocento-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Quattrocento-regular";
+    src: url(/resources/fonts/Quattrocento-Regular.ttf) format("truetype");
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+    font-family: 'Quattrocento-regular';
+    background-size: 200% 200%;
+}
+
+h2 {
+    color: hsl(190, 99%, 45%);
+    font-size: 4rem;
+    font-family: "Oswald-bold";
+}
+
+h3 {
+    color: hsl(190, 99%, 45%);
+    font-family: "Oswald-bold";
+    font-size: 2rem;
+}
+
+a {
+    color: hsl(190, 99%, 45%);
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    position: fixed;
+    z-index: 2;
+}
+
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-family: 'Oswald-bold';
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    transition: all 0.4s ease-in-out;
+}
+
+header ul li a:hover {
+    color: hsl(320, 80%, 57%);
+    padding-bottom: 0.2rem;
+    font-size: 1.3rem;
+}
+
+
+/* Main */
+main {
+    padding-top: 3rem;
+
+}
+
+/* Animated banner */
+.banner {
+    margin: 1rem 50%;
+    width: 400px;
+    height: 30rem;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: radial-gradient(ellipse 50% 35% at 50% 50%,
+            #6b1839,
+            transparent);
+    letter-spacing: 2;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+}
+
+
+
+@keyframes blink {
+
+    0%,
+    22%,
+    36%,
+    75% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+            -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+            0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+
+    28%,
+    33% {
+        color: #ff65bd;
+        text-shadow: none;
+    }
+
+    82%,
+    97% {
+        color: #ff2483;
+        text-shadow: none;
+    }
+}
+
+.flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+#fast-flicker {
+    font-size: 1rem;
+}
+
+@keyframes shine {
+    0% {
+        color: #6b1839;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+            -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+            0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+}
+
+@keyframes flicker {
+    from {
+        opacity: 1;
+    }
+
+    4% {
+        opacity: 0.9;
+    }
+
+    6% {
+        opacity: 0.85;
+    }
+
+    8% {
+        opacity: 0.95;
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    11% {
+        opacity: 0.922;
+    }
+
+    12% {
+        opacity: 0.9;
+    }
+
+    14% {
+        opacity: 0.95;
+    }
+
+    16% {
+        opacity: 0.98;
+    }
+
+    17% {
+        opacity: 0.9;
+    }
+
+    19% {
+        opacity: 0.93;
+    }
+
+    20% {
+        opacity: 0.99;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    26% {
+        opacity: 0.94;
+    }
+
+    28% {
+        opacity: 0.98;
+    }
+
+    37% {
+        opacity: 0.93;
+    }
+
+    38% {
+        opacity: 0.5;
+    }
+
+    39% {
+        opacity: 0.96;
+    }
+
+    42% {
+        opacity: 1;
+    }
+
+    44% {
+        opacity: 0.97;
+    }
+
+    46% {
+        opacity: 0.94;
+    }
+
+    56% {
+        opacity: 0.9;
+    }
+
+    58% {
+        opacity: 0.9;
+    }
+
+    60% {
+        opacity: 0.99;
+    }
+
+    68% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.9;
+    }
+
+    72% {
+        opacity: 0.95;
+    }
+
+    93% {
+        opacity: 0.93;
+    }
+
+    95% {
+        opacity: 0.95;
+    }
+
+    97% {
+        opacity: 0.93;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Lighters */
+canvas {
+    filter: blur(1px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* My projects section  */
+.my-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    z-index: 1;
+    height: 10rem;
+    width: 15rem;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.gradien-border {
+    border: 0.1rem solid black;
+    background: black;
+    border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
+}
+
+
+/* about me */
+
+.about-me {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.about-me h2 {
+    padding: 1rem;
+}
+
+.about-me h3 {
+    padding: 1rem;
+}
+
+.about-me p {
+    width: 57rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.2;
+    font-size: 1.1rem;
+    text-indent: 2rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: hsl(190, 99%, 45%);
+    width: 11rem;
+}
+
+.skill:hover {
+    color: hsl(320, 80%, 57%);
+}
+
+.skill {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1rem 0 0 0;
+    transition: all 2s ease-in-out 0.4s;
+}
+
+
+.skill img {
+    width: 10rem;
+    padding: .5rem;
+    padding-top: 0.5rem;
+}
+
+.skill img:hover {
+    animation-play-state: paused;
+}
+
+.flip-vertical-right {
+    -webkit-animation: flip-vertical-right 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite alternate;
+    animation: flip-vertical-right 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite alternate;
+}
+
+@-webkit-keyframes flip-vertical-right {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    100% {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes flip-vertical-right {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    100% {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+}
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+form {
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-me textarea {
+    margin-top: 1rem;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.contact-me input {
+    width: 20rem;
+    padding: 1rem 1rem;
+    font-size: 1.3rem;
+    height: 0.5rem;
+    margin-top: .5rem;
+    font-family: "Quattrocento-bold";
+    color: #ffffff;
+}
+
+.contact-me label {
+    font-size: 2rem;
+    font-family: "Oswald-regular";
+    padding: 0.5rem;
+    color: hsl(190, 99%, 45%);
+}
+
+.contact-me button {
+    margin-top: 0.5rem;
+    background-color: #000000;
+    color: #ffffff;
+}
