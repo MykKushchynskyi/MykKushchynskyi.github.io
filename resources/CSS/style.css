@@ -443,6 +443,11 @@ form {
     color: #ffffff;
     text-align: justify;
     font-size: 1.1rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: -21px 19px 50px 17px hsla(320, 80%, 20%, 0.2);
+    -moz-box-shadow: -21px 19px 50px 17px hsla(320, 80%, 20%, 0.2);
+    box-shadow: -21px 19px 50px 17px hsla(320, 80%, 20%, 0.2);
+    border: #000000;
 }
 
 .contact-me input {
@@ -453,6 +458,12 @@ form {
     margin-top: .5rem;
     font-family: "Quattrocento-bold";
     color: #ffffff;
+    background-color: #000000;
+    border-radius: 1rem;
+    border: #000000;
+    -webkit-box-shadow: -21px 19px 50px 17px hsla(320, 80%, 20%, 0.2);
+    -moz-box-shadow: -21px 19px 50px 17px hsla(320, 80%, 20%, 0.2);
+    box-shadow: -21px 19px 50px 17px hsla(320, 80%, 20%, 0.2);
 }
 
 .contact-me label {
@@ -463,7 +474,44 @@ form {
 }
 
 .contact-me button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
     margin-top: 0.5rem;
     background-color: #000000;
     color: #ffffff;
+    transition: all 0.5s ease-in;
+    font-family: "Oswald-bold";
+}
+
+.contact-me button:hover {
+    color: hsl(190, 99%, 45%);
+    -webkit-box-shadow: -21px 19px 50px 17px hsla(190, 99%, 45%, 0.1);
+    -moz-box-shadow: -21px 19px 50px 17px hsla(190, 99%, 45%, 0.1);
+    box-shadow: -21px 19px 50px 17px hsla(190, 99%, 45%, 0.1);
+}
+
+
+/* footer */
+
+footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 3rem;
+    background-color: #000000;
+    align-items: center;
+    font-family: "Oswald-bold";
+}
+
+footer img {
+
+    height: 2rem;
+    padding-right: 1rem;
+}
+
+footer li {
+    display: inline;
 }
