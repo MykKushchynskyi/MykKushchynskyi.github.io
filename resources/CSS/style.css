@@ -367,7 +367,6 @@ canvas {
     justify-content: center;
     color: hsl(190, 99%, 45%);
     width: 11rem;
-    flex-wrap: wrap;
 }
 
 .skill:hover {
@@ -444,12 +443,13 @@ form {
     background-color: #000000;
     color: #ffffff;
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     border-radius: 1rem;
     -webkit-box-shadow: -21px 19px 50px 17px hsla(320, 80%, 20%, 0.2);
     -moz-box-shadow: -21px 19px 50px 17px hsla(320, 80%, 20%, 0.2);
     box-shadow: -21px 19px 50px 17px hsla(320, 80%, 20%, 0.2);
-    border: #000000;
+    border: 1px solid hsla(212, 15%, 78%, 0.3);
+    font-family: "Quattrocento-bold";
 }
 
 .contact-me input {
@@ -462,7 +462,7 @@ form {
     color: #ffffff;
     background-color: #000000;
     border-radius: 1rem;
-    border: #000000;
+    border: 1px solid hsla(212, 15%, 78%, 0.3);
     -webkit-box-shadow: -21px 19px 50px 17px hsla(320, 80%, 20%, 0.2);
     -moz-box-shadow: -21px 19px 50px 17px hsla(320, 80%, 20%, 0.2);
     box-shadow: -21px 19px 50px 17px hsla(320, 80%, 20%, 0.2);
@@ -470,7 +470,7 @@ form {
 
 .contact-me label {
     font-size: 2rem;
-    font-family: "Oswald-regular";
+    font-family: "Oswald-bold";
     padding: 0.5rem;
     color: hsl(190, 99%, 45%);
 }
@@ -484,7 +484,8 @@ form {
     background-color: #000000;
     color: #ffffff;
     transition: all 0.5s ease-in;
-    font-family: "Oswald-bold";
+    font-family: "Quattrocento-bold";
+    border: 1px solid hsla(212, 15%, 78%, 0.6);
 }
 
 .contact-me button:hover {
@@ -524,14 +525,19 @@ footer li {
 
 @media only screen and (max-width: 600px) {
     header {
-        font-size: 1rem;
+        padding-left: 0;
+        font-size: 0.9rem;
         width: 100%;
     }
 
     .banner {
         margin: 0 1rem 0 0;
         padding-left: 1rem;
-        width: 100%;
+        width: 90%;
+    }
+
+    .banner h1 {
+        margin: 0;
     }
 
     .my-projects {

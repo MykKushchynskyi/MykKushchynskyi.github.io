@@ -13,16 +13,16 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#">Main</a></li>
-          <li><a href="#">My projects</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li><a href="#main">Main</a></li>
+          <li><a href="#myProjects">My projects</a></li>
+          <li><a href="#aboutMe">About me</a></li>
+          <li><a href="#contact">Contact me</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <canvas id="canvas"></canvas>
-      <section class="banner">
+      <section id="main" class="banner">
         <h1><span class="flicker">Hello</span>,</h1>
         <h1>
           <span>my n<span class="fast-flicker">a</span>me Mykola</span>
@@ -33,7 +33,7 @@
           >
         </h1>
       </section>
-      <section class="my-projects">
+      <section id="myProjects" class="my-projects">
         <h2>My projects</h2>
         <div class="projects">
           <div class="project gradien-border">
@@ -47,7 +47,7 @@
           </div>
         </div>
       </section>
-      <section class="about-me">
+      <section id="aboutMe" class="about-me">
         <h2>About me</h2>
         <p>
           Bacon ipsum dolor amet buffalo cupim andouille tri-tip, sirloin tongue
@@ -90,9 +90,9 @@
           </li>
         </ul>
       </section>
-      <section class="contact-me">
+      <section id="contact" class="contact-me">
         <form>
-          <label for="email">Write Me</label>
+          <label for="email">Write me</label>
           <input type="text" id="email" name="email" value="Write your email" />
           <textarea name="question" id="question" cols="40" rows="10">
   Input your text....
@@ -102,22 +102,26 @@
       </section>
     </main>
     <footer>
-      <p>Create by Mykola Kushchynskyi 2022</p>
+      <p>Created by Mykola Kushchynskyi 2022</p>
       <ul>
         <li>
-          <a href=""
+          <a href="https://github.com/MykKushchynskyi" target="_blank"
             ><img
               src="./resources/img/code-github-hosting-svgrepo-com.svg"
-              alt=""
+              alt="github icon"
           /></a>
         </li>
         <li>
-          <a href=""
+          <a
+            href="https://www.facebook.com/profile.php?id=100010055798712"
+            target="_blank"
             ><img src="./resources/img/facebook-svgrepo-com.svg" alt=""
           /></a>
         </li>
         <li>
-          <a href=""
+          <a
+            href="https://www.linkedin.com/in/mykola-kushchynskyi-b0852814b/"
+            target="_blank"
             ><img src="./resources/img/linkedin-svgrepo-com.svg" alt=""
           /></a>
         </li>
